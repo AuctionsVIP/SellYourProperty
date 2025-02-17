@@ -279,14 +279,6 @@
     </div>
 
     <script>
-        // 🔥 Detect Facebook in-app browser and redirect to the default browser
-        document.addEventListener("DOMContentLoaded", function () {
-            if (navigator.userAgent.includes("FBAN") || navigator.userAgent.includes("FBAV")) {
-                // If inside Facebook's browser, redirect to the default browser
-                window.location.href = "https://yourlandingpage.com"; // Replace with your actual landing page URL
-            }
-        });
-
         document.getElementById('propertyForm').addEventListener('submit', function(event) {
             event.preventDefault();
 
@@ -314,7 +306,6 @@
             document.getElementById('successModal').style.display = 'none';
         });
     </script>
-
 
     </body>
     </html>
